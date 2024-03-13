@@ -1,0 +1,58 @@
+[
+    {
+      "count": 3,
+      "hate_speech": 0,
+      "offensive_language": 0,
+      "neither": 3,
+      "class": 2,
+      "tweet": "!!! RT @mayasolovely: As a woman you shouldn't complain about cleaning up your house. &amp; as a man you should always take the trash out..."
+    },
+    {
+      "count": 3,
+      "hate_speech": 0,
+      "offensive_language": 3,
+      "neither": 0,
+      "class": 1,
+      "tweet": "!!!!! RT @mleew17: boy dats cold...tyga dwn bad for cuffin dat hoe in the 1st place!!"
+    },
+    {
+      "count": 3,
+      "hate_speech": 0,
+      "offensive_language": 3,
+      "neither": 0,
+      "class": 1,
+      "tweet": "!!!!!!! RT @UrKindOfBrand Dawg!!!! RT @80sbaby4life: You ever fuck a bitch and she start to cry? You be confused as shit"
+    },
+    {
+      "count": 3,
+      "hate_speech": 0,
+      "offensive_language": 2,
+      "neither": 1,
+      "class": 1,
+      "tweet": "!!!!!!!!! RT @C_G_Anderson: @viva_based she look like a tranny"
+    },
+    {
+      "count": 6,
+      "hate_speech": 0,
+      "offensive_language": 6,
+      "neither": 0,
+      "class": 1,
+      "tweet": "!!!!!!!!!!!!! RT @ShenikaRoberts: The shit you hear about me might be true or it might be faker than the bitch who told it to ya &#57361;"
+    },
+    {
+      "count": 3,
+      "hate_speech": 1,
+      "offensive_language": 2,
+      "neither": 0,
+      "class": 1,
+      "tweet": "!!!!!!!!!!!!!!!!!!\"@T_Madison_x: The shit just blows me..claim you so faithful and down for somebody but still fucking with hoes! &#128514;&#128514;&#128514;\""
+    },
+    {
+      "count": 3,
+      "hate_speech": 2,
+      "offensive_language": 1,
+      "neither": 0,
+      "class": 0,
+      "tweet": "\"@Blackman38Tide: @WhaleLookyHere @HowdyDowdy11 queer\" gaywad"
+    }
+]

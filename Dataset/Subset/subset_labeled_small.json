@@ -1,0 +1,18 @@
+[
+    {
+      "count": 3,
+      "hate_speech": 0,
+      "offensive_language": 0,
+      "neither": 3,
+      "class": 2,
+      "tweet": "my name is Mark"
+    },
+    {
+      "count": 3,
+      "hate_speech": 2,
+      "offensive_language": 1,
+      "neither": 0,
+      "class": 0,
+      "tweet": "my name is Jay"
+    }
+]

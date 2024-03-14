@@ -1,12 +1,15 @@
 import json
 import constants
+import os
 
 class Indexer:
 
 
     _inverted_index_path = None
+    _inverted_index = {}
     _dataset_path = None
     _dataset = None
+    
 
 
     def __init__(self, dataset_path: str, inverted_index_path: str) -> None:
@@ -24,6 +27,11 @@ class Indexer:
             # Load the JSON data from the file
             self._dataset = json.load(file)
 
+        k = 1
+        for item in self._dataset:
+            item[constants.DOCID] = k
+            k+=1
+
     def _create_empty_inverted_index(self):
         """
             Creates an boilerplate text file determined and located by self._inverted_index_path
@@ -38,6 +46,13 @@ class Indexer:
     def create_inverted_index(self):
         """Creates the Inverted Index determined and located by self._inverted_index_path.
         """
+        
+        for entry in self._dataset:
+            for word in (entry[constants.TWEET].split(' ')):
+                if word not in self._inverted_index: #first time the word occurs
+                    self._inverted_index[word] = [entry[constants.DOCID]]
+        
+        print(self._inverted_index)
 
     def check_initialization(self):
 
@@ -49,7 +64,18 @@ class Indexer:
             print(item)
             print('\n')
 
-if __name__ == "__main__":
+def warning():
     
-    my_index = Indexer(constants.PATH_TO_LABELED_JSON,constants.PATH_TO_INVERTED_INDEX)
+    print("\n---------------------")
+    print("\nPython script was executed using index_tools.py.")
+    print("\n---------------------\n\n")
+
+
+
+if __name__ == "__main__":
+
+    os.system('cls' if os.name == 'nt' else 'clear')
+    warning()
+    
+    my_index = Indexer(constants.PATH_TO_SMALL_JSON,constants.PATH_TO_INVERTED_INDEX)
     my_index.create_inverted_index()

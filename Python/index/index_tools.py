@@ -1,16 +1,15 @@
 import json
-import constants
 import os
 
-class Indexer:
+import index.constants as constants
+import data_structures.custom_queue as queue
 
+class Indexer:
 
     _inverted_index_path = None
     _inverted_index = {}
     _dataset_path = None
     _dataset = None
-    
-
 
     def __init__(self, dataset_path: str, inverted_index_path: str) -> None:
         """Initialize Indexer with the given attribute.
@@ -50,7 +49,11 @@ class Indexer:
         for entry in self._dataset:
             for word in (entry[constants.TWEET].split(' ')):
                 if word not in self._inverted_index: #first time the word occurs
-                    self._inverted_index[word] = [entry[constants.DOCID]]
+                    self._inverted_index[word] = queue.CustomQueue()
+                    self._inverted_index[word].enqueue(entry[constants.DOCID])
+                else:
+                    self._inverted_index[word].enqueue(entry[constants.DOCID])
+                    pass
         
         print(self._inverted_index)
 
@@ -78,4 +81,3 @@ if __name__ == "__main__":
     warning()
     
     my_index = Indexer(constants.PATH_TO_SMALL_JSON,constants.PATH_TO_INVERTED_INDEX)
-    my_index.create_inverted_index()

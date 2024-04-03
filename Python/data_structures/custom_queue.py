@@ -14,6 +14,12 @@ class CustomQueue:
     def dequeue(self):
         return self.my_queue.get()
     
+    def strdequeue(self):
+        return str(self.my_queue.get())
+
+    def size(self):
+        return self.my_queue.qsize()
+
     def __str__(self) -> str:
         
         temp_queue = queue.Queue(maxsize=(self.my_queue.qsize()))

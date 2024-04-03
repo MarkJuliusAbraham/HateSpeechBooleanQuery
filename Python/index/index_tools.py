@@ -2,6 +2,7 @@ import json
 import os
 
 import index.constants as constants
+
 import data_structures.custom_queue as queue
 
 class Indexer:
@@ -45,17 +46,72 @@ class Indexer:
     def create_inverted_index(self):
         """Creates the Inverted Index determined and located by self._inverted_index_path.
         """
+
+        # note that self._dataset is a json object
+        # and self._inverted_index is simply a disctionary with terms as keys and postings ( created using custom queues) as values
         
-        for entry in self._dataset:
-            for word in (entry[constants.TWEET].split(' ')):
-                if word not in self._inverted_index: #first time the word occurs
-                    self._inverted_index[word] = queue.CustomQueue()
-                    self._inverted_index[word].enqueue(entry[constants.DOCID])
-                else:
-                    self._inverted_index[word].enqueue(entry[constants.DOCID])
+        with open(self._inverted_index_path, 'w') as file:
+
+            for entry in self._dataset:
+                for word in (entry[constants.TWEET].split(' ')):
+
+                    term = word.lower()
+
+                    if term not in self._inverted_index: #first time the word occurs
+
+                        # place a custom queue as a value, using the word as a key. 
+                        # this custom queue represents the postings list
+                        self._inverted_index[term] = queue.CustomQueue()
+                        self._inverted_index[term].enqueue(entry[constants.DOCID])
+
+
+                    else:   # occurs only if the word is already a valid key
+
+                        # since the key is valid, then there exists already a custom queue as value that can be accessed
+                        # enqueue the DOCID value
+                        self._inverted_index[term].enqueue(entry[constants.DOCID]) 
+    
+        self.write_inverted_index_to_file(self._inverted_index, self._inverted_index_path)
+
+
+    def write_inverted_index_to_file(self, inverted_index, inverted_index_path):
+        """
+            A class method meant to be used for the self._inverted_index variable in the class.
+            It reads the COMPLETED inverted index in memory and transcribes it to a tsv file.        
+
+            Args:
+                inverted_index (dictionary of the form {"string": "custom_queue object"})
+                    see custom_queue.py in data_structures.
+        """
+
+        keys_sorted = []
+
+        for keys in inverted_index.keys():
+            keys_sorted.append(keys)
+
+        keys_sorted.sort()
+
+        with open(inverted_index_path, 'w') as file:
+            for key in keys_sorted:
+                file.write(key)
+                file.write('\t')
+
+                print(inverted_index[key].size())
+                posting_size = inverted_index[key].size()
+                file.write(str(posting_size))
+                file.write('\t')
+
+                for count in range(posting_size):
+                    file.write(self._inverted_index[key].strdequeue())
+                    file.write('\t')
+                # for docID in inverted_index[key]:
+                #     file.write(docID)
+                #     file.write('\t')
                     pass
-        
-        print(self._inverted_index)
+                file.write('\n')
+
+
+
 
     def check_initialization(self):
 
@@ -75,9 +131,9 @@ def warning():
 
 
 
-if __name__ == "__main__":
+if __name__ != "__main__":
 
     os.system('cls' if os.name == 'nt' else 'clear')
     warning()
     
-    my_index = Indexer(constants.PATH_TO_SMALL_JSON,constants.PATH_TO_INVERTED_INDEX)
+    

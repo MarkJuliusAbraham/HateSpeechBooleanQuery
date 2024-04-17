@@ -53,6 +53,7 @@ class Indexer:
         with open(self._inverted_index_path, 'w') as file:
 
             for entry in self._dataset:
+                # for each word in the entry or line of the tweet, split by the ' ':
                 for word in (entry[constants.TWEET].split(' ')):
 
                     term = word.lower()
@@ -72,7 +73,6 @@ class Indexer:
                         self._inverted_index[term].enqueue(entry[constants.DOCID]) 
     
         self.write_inverted_index_to_file(self._inverted_index, self._inverted_index_path)
-
 
     def write_inverted_index_to_file(self, inverted_index, inverted_index_path):
         """
@@ -96,7 +96,7 @@ class Indexer:
                 file.write(key)
                 file.write('\t')
 
-                print(inverted_index[key].size())
+                
                 posting_size = inverted_index[key].size()
                 file.write(str(posting_size))
                 file.write('\t')
@@ -104,14 +104,7 @@ class Indexer:
                 for count in range(posting_size):
                     file.write(self._inverted_index[key].strdequeue())
                     file.write('\t')
-                # for docID in inverted_index[key]:
-                #     file.write(docID)
-                #     file.write('\t')
-                    pass
                 file.write('\n')
-
-
-
 
     def check_initialization(self):
 

@@ -3,12 +3,12 @@ import os
 
 import index.constants as constants
 
-import data_structures.custom_queue as queue
+import data_structures.inverted_index as inverted_index
 
-class Indexer:
+class IndexMachine:
 
     _inverted_index_path = None
-    _inverted_index = {}
+    _inverted_index = None
     _dataset_path = None
     _dataset = None
 
@@ -21,6 +21,7 @@ class Indexer:
 
         self._dataset_path = dataset_path
         self._inverted_index_path = inverted_index_path
+        self._inverted_index = inverted_index.InvertedIndex()
 
         # Open the JSON file for reading
         with open(dataset_path, 'r') as file:
@@ -44,35 +45,53 @@ class Indexer:
             file.write('Writing to a file in Python.\n')
 
     def create_inverted_index(self):
-        """Creates the Inverted Index determined and located by self._inverted_index_path.
-        """
-
-        # note that self._dataset is a json object
-        # and self._inverted_index is simply a disctionary with terms as keys and postings ( created using custom queues) as values
+        # start reading
+        # do the logic for placing stuff in the inverted index
+        self._inverted_index.add_term("Mark", 1)
         
-        with open(self._inverted_index_path, 'w') as file:
-
-            for entry in self._dataset:
-                # for each word in the entry or line of the tweet, split by the ' ':
-                for word in (entry[constants.TWEET].split(' ')):
-
-                    term = word.lower()
-
-                    if term not in self._inverted_index: #first time the word occurs
-
-                        # place a custom queue as a value, using the word as a key. 
-                        # this custom queue represents the postings list
-                        self._inverted_index[term] = queue.CustomQueue()
-                        self._inverted_index[term].enqueue(entry[constants.DOCID])
+        self._inverted_index.add_term("Really", 1)
+        self._inverted_index.add_term("Likes", 1)
+        self._inverted_index.add_term("Clarisse", 1)
+        self._inverted_index.add_term("Mark", 24)
+        self._inverted_index.add_term("Mark", 22)
 
 
-                    else:   # occurs only if the word is already a valid key
+        self._inverted_index.add_term("Cow", 99)
 
-                        # since the key is valid, then there exists already a custom queue as value that can be accessed
-                        # enqueue the DOCID value
-                        self._inverted_index[term].enqueue(entry[constants.DOCID]) 
+
+
+
+
+    # def create_inverted_index(self):
+    #     """Creates the Inverted Index determined and located by self._inverted_index_path.
+    #     """
+
+    #     # note that self._dataset is a json object
+    #     # and self._inverted_index is simply a disctionary with terms as keys and postings ( created using custom queues) as values
+        
+    #     with open(self._inverted_index_path, 'w') as file:
+
+    #         for entry in self._dataset:
+    #             # for each word in the entry or line of the tweet, split by the ' ':
+    #             for word in (entry[constants.TWEET].split(' ')):
+
+    #                 term = word.lower()
+
+    #                 if term not in self._inverted_index: #first time the word occurs
+
+    #                     # place a custom queue as a value, using the word as a key. 
+    #                     # this custom queue represents the postings list
+    #                     self._inverted_index[term] = queue.InvertedIndex()
+    #                     self._inverted_index[term].enqueue(entry[constants.DOCID])
+
+
+    #                 else:   # occurs only if the word is already a valid key
+
+    #                     # since the key is valid, then there exists already a custom queue as value that can be accessed
+    #                     # enqueue the DOCID value
+    #                     self._inverted_index[term].enqueue(entry[constants.DOCID]) 
     
-        self.write_inverted_index_to_file(self._inverted_index, self._inverted_index_path)
+    #     self.write_inverted_index_to_file(self._inverted_index, self._inverted_index_path)
 
     def write_inverted_index_to_file(self, inverted_index, inverted_index_path):
         """
@@ -121,8 +140,6 @@ def warning():
     print("\n---------------------")
     print("\nPython script was executed using index_tools.py.")
     print("\n---------------------\n\n")
-
-
 
 if __name__ != "__main__":
 

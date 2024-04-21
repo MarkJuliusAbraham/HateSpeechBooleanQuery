@@ -1,16 +1,32 @@
 import queue
 import os
+import data_structures.postings as postingslist
 
-class CustomQueue:
+class InvertedIndex:
 
     my_queue = None
 
+    _inverted_index = None
+
+
     def __init__(self):
         self.my_queue = queue.Queue(maxsize=0)
+        self._inverted_index = {}
 
-    def enqueue(self, entry, term_frequency:int):
-        self.my_queue.put([entry,term_frequency])
-    
+    def add_term(self, term, docID):
+
+        # if term is new, create a key of the term with the value of an empty postings.
+        if term not in self._inverted_index:
+            self._inverted_index[term] = postingslist.Postings() 
+  
+            
+
+        # at this point, the term must already have a postings, and updating the postings is the only concern
+        
+        self._inverted_index[term].updatePostings(docID)
+
+        self._inverted_index[term].display()
+
     def enqueue(self, entry):
         self.my_queue.put(entry)
 
@@ -20,6 +36,12 @@ class CustomQueue:
     def strdequeue(self):
         return str(self.my_queue.get())
 
+    def create_new_postings():
+        pass
+
+    def update_termfrqncy_at_(docID):
+        pass
+    
     def size(self):
         return self.my_queue.qsize()
 
@@ -69,6 +91,6 @@ if __name__ == '__main__':
     
     os.system('cls' if os.name == 'nt' else 'clear')
 
-    custom_queue = CustomQueue()
+    custom_queue = InvertedIndex()
 
     print(custom_queue)

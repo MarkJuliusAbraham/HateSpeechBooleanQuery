@@ -1,5 +1,331 @@
-is	2	1	2	
-jay	1	2	
-mark	1	1	
-my	2	1	2	
-name	6	1	1	1	1	1	2	
+
+
+bitchy	1	33	1	
+!!!	1	1	1	
+"@blackman38tide:	1	2	1	
+"@king_shawn_6:	1	35	1	
+"@stellatex:	1	3	1	
+"@stephenwildboy:	1	4	1	
+"@strap__:	1	5	1	
+"@sukmysweetness:	1	6	1	
+"@sylvieamx:	1	7	1	
+"@tayknosbest:	1	10	1	
+"@taylorr_babee:	1	11	1	
+"@tee_jonez:	2	8	1	9	1	
+"@thatniggatroy:	1	12	1	
+"@the_realist_sam:	1	19	1	
+"@thegamerkingkev:	1	13	1	
+"@thenewsat:	1	14	1	
+"@thenymphotweets:	1	15	1	
+"@theo17100:	1	20	1	
+"@theomaxximus:	2	21	1	22	1	
+"@theonemiss_luu:	1	16	1	
+"@therealrickyb21:	2	17	1	18	1	
+"@thornton25:	1	23	1	
+"@tmacc_gfg:	3	24	2	25	1	26	1	
+"@trelekidd:	1	27	1	
+"@tweetgamelazy:	1	28	1	
+"@tyjoncuffee:	1	29	1	
+"@uberfacts:	1	30	1	
+"@unholy_jack:	1	31	1	
+"@vbomb20:	1	32	1	
+"@veronikahumbert:	1	33	1	
+"@vineforthebyrd:	1	34	1	
+"party	1	31	1	
+#gerryshalloweenparty	1	21	1	
+#mtvhottest	1	33	1	
+#newsatquestions
+yeah	1	14	1	
+#pisces	1	7	1	
+&#128069;&#8482;	1	4	1	
+&#128079;&#128524;"	1	35	1	
+&#128175;"	1	5	1	
+&#128175;&#128175;	1	27	1	
+&#128514;&#128514;	1	9	1	
+&#128514;&#128514;&#128514;	1	8	1	
+&#128549;&#8221;hoes	2	24	1	25	1	
+&#128553;	1	12	1	
+&#8220;@kantkeepahbytch:	1	23	1	
+&#8220;@tizzimarie:	2	24	1	25	1	
+&#8220;@voiceofdstreetz:	1	24	1	
+&amp;	1	1	1	
+&gt;&gt;&gt;"	1	15	1	
+(:	1	11	1	
+*walks	1	22	1	
+15	1	30	1	
+2-5	1	19	1	
+24	1	13	1	
+:	1	27	1	
+@	1	12	1	
+@16stanleys	2	8	1	9	1	
+@bobbyshmurdags9	1	26	1	
+@gook____	1	17	1	
+@howdydowdy11	1	2	1	
+@jabarithegreat	1	27	1	
+@jetsandaswisher	2	17	1	18	1	
+@kingcuh	2	8	1	9	1	
+@madrid2_	1	19	1	
+@mayasolovely:	1	1	1	
+@tropicalblanket"i	1	19	1	
+@whalelookyhere	1	2	1	
+@white_thunduh	1	35	1	
+@woodchuck20	1	32	1	
+_______:
+a.)	1	14	1	
+a	5	1	2	11	1	13	1	27	1	29	1	
+about	1	1	1	
+adios!"	1	3	1	
+ain't	4	5	1	11	1	17	1	29	1	
+all	1	31	1	
+all?	1	31	1	
+also	1	3	1	
+always	1	1	1	
+amazing	1	35	1	
+and	3	16	1	23	1	29	1	
+anybody's	1	7	1	
+anyway	2	24	1	25	1	
+are	1	31	1	
+as	2	1	2	26	1	
+ass.	1	16	1	
+ball	1	19	1	
+bars"	1	28	1	
+be	4	7	1	11	1	12	1	26	1	
+beautiful?"	1	16	1	
+before	1	26	1	
+being	1	35	1	
+between	1	15	1	
+bitch	5	5	1	22	1	27	2	28	1	34	1	
+bitch!	1	33	1	
+bitch"	1	18	1	
+bitch,	2	7	1	14	2	
+bitch-by	1	26	1	
+bitch.	1	12	1	
+bitch."	1	11	1	
+bitches	1	31	1	
+bitches"	1	6	1	
+bitter	1	30	1	
+blah	1	8	2	
+blah"	1	8	1	
+bobby	1	26	1	
+boys	1	13	1	
+broke	1	6	1	
+bus	1	31	1	
+by	1	15	1	
+call	1	14	1	
+can	2	23	1	28	1	
+change	1	7	1	
+character	1	30	1	
+chilling	1	4	1	
+chrus	1	22	1	
+cleaning	1	1	1	
+come	1	17	1	
+coming	2	17	1	33	1	
+complain	1	1	1	
+control	1	7	1	
+crazy"	1	10	1	
+cuh	1	9	1	
+dam"	1	12	1	
+deaths	1	30	1	
+del	1	33	1	
+don't	3	7	1	12	1	19	1	
+drink	1	13	1	
+drops	1	22	1	
+eat	1	23	1	
+eating	1	23	1	
+ever	1	11	1	
+ever.	1	23	1	
+faggot	2	18	1	19	1	
+fags	1	13	1	
+fam"&#128564;	1	25	1	
+fam"&#128564;&#8221;them	1	24	1	
+fine	1	12	1	
+flags	1	35	1	
+fohead*	1	22	1	
+for	3	3	1	13	2	35	1	
+forever	1	23	1	
+friday.	1	19	1	
+front."bitch	1	17	1	
+fuck	1	34	1	
+fuck"	1	26	1	
+fuckin	1	12	1	
+full	1	23	1	
+gave	1	13	1	
+gaywad	1	2	1	
+get	4	20	1	23	1	29	1	35	1	
+getting	1	26	1	
+girl	1	13	1	
+gonna	1	11	1	
+gucci	1	27	1	
+guess	1	3	1	
+hahaha"	1	9	1	
+halloween	1	21	1	
+handle	1	28	1	
+harbor	1	31	1	
+hart.	1	11	1	
+has	1	13	1	
+have	1	3	1	
+head	1	13	1	
+hell	2	26	1	35	1	
+her	1	15	2	
+her,	1	12	1	
+hickies	1	15	1	
+ho	2	8	1	9	1	
+hoe	2	26	1	29	1	
+hoes	2	10	1	24	1	
+hoes""	1	31	1	
+house.	1	1	1	
+http://t.co/1rxyqoosm0"ned	1	30	1	
+http://t.co/2hyyabk4eh	1	18	1	
+http://t.co/3ycrsrnjhc"	1	21	1	
+http://t.co/533flbvwqh"	1	33	1	
+http://t.co/byj1hoyhmg"	1	20	1	
+http://t.co/lt9lijjpg9"&#128514;&#128514;&#128514;&#128514;&#128514;&#128514;	1	27	1	
+http://t.co/mik3ipnle6"	1	4	1	
+http://t.co/nb5vgdssgi	1	22	1	
+http://t.co/ulclfuf8nc	1	30	1	
+https://t.co/4lmtfnl2iy"
+
+lmfao	1	34	1	
+i	9	3	1	5	1	13	1	17	1	19	1	23	3	26	1	28	1	35	1	
+i'm	3	9	1	16	1	19	1	
+idk	1	8	1	
+if	3	5	1	13	1	29	1	
+impress	1	6	1	
+in	3	13	1	15	1	22	1	
+ipad.	1	19	1	
+is	2	10	1	27	1	
+it	2	20	1	32	1	
+ita!	1	9	1	
+its	2	15	1	33	1	
+jesse	1	14	1	
+kevin	1	11	1	
+kittycopter	1	34	1	
+lad	2	4	1	20	1	
+lana	1	33	1	
+later
+d.)	1	14	1	
+let	1	7	1	
+let's	1	19	1	
+like	1	24	1	
+little	1	33	1	
+live	1	26	1	
+lol	2	23	1	31	1	
+lol"	1	23	1	
+lol&#8221;	1	23	1	
+longer	1	16	1	
+love	3	16	1	23	1	32	1	
+mad	1	9	1	
+magaluf	1	13	1	
+man	2	1	1	30	1	
+mane	1	27	1	
+mansplaining!	1	3	1	
+maybe
+b.)	1	14	1	
+me	3	14	1	16	1	26	1	
+meds"&#127815;&#127815;&#127868;	1	24	1	
+mines	1	5	2	
+money	1	6	1	
+monkey	1	16	1	
+my	6	19	1	26	1	27	1	29	1	34	1	35	1	
+nasty	2	24	1	25	1	
+never	2	7	1	23	1	
+nigger	1	21	1	
+niggy	1	35	1	
+no	6	5	1	12	1	16	1	24	1	25	1	28	1	
+no.	1	16	1	
+not	1	9	1	
+nudes	1	13	1	
+on	2	19	1	34	1	
+only	2	6	1	15	1	
+oomf	1	12	1	
+or	1	7	1	
+out	1	29	1	
+out...	1	1	1	
+over...	1	30	1	
+people	1	7	1	
+pinkman"
+@machinegunkelly	1	14	1	
+play	1	26	1	
+probly	1	13	1	
+promo	1	33	1	
+pussy	3	3	1	15	1	23	1	
+pussy"	1	32	1	
+queer"	1	2	1	
+rey	1	33	1	
+ride	1	28	1	
+rigghhht	1	7	1	
+right	1	15	2	
+rt	2	1	1	27	1	
+sad	1	30	1	
+scally	2	4	1	20	1	
+sends	1	13	1	
+sexy	1	4	1	
+sharing	1	5	1	
+she	1	13	1	
+shit	1	23	1	
+should	1	1	1	
+shouldn't	1	1	1	
+simple	1	6	1	
+slice	1	11	1	
+slushes	2	24	1	25	1	
+so	1	12	1	
+stark	1	30	1	
+steve-o
+c.)	1	14	1	
+stfu	1	3	1	
+still	3	16	1	22	1	30	1	
+stoner	1	27	1	
+stupid	1	21	1	
+supahot	1	22	1	
+suure..	1	9	1	
+take	1	1	1	
+taste	1	24	1	
+teacher	1	22	1	
+test	1	22	1	
+test,	1	22	1	
+that	4	13	1	22	1	23	1	26	1	
+that's	1	35	1	
+the	5	1	1	6	1	13	1	17	1	30	1	
+them."	1	7	1	
+these	2	10	1	31	1	
+they	1	7	1	
+thighs	1	15	1	
+this	2	19	2	20	1	
+tho	1	12	1	
+tho"	1	22	1	
+through	1	17	1	
+time	1	3	1	
+to	3	13	1	22	1	34	1	
+traphoussseeeee"	1	29	1	
+trash	1	1	1	
+tuku	2	8	1	9	1	
+tv	1	30	1	
+twitter"	1	13	1	
+ugly	1	16	1	
+ultraviolence	1	33	1	
+up	4	1	1	19	1	22	1	29	1	
+video,	1	33	1	
+was	2	21	1	30	1	
+way	1	34	1	
+we're	1	30	1	
+what?	1	3	1	
+when	1	16	1	
+where	1	35	1	
+will	1	7	1	
+with	2	22	1	28	1	
+woman	1	1	1	
+wonder	1	13	1	
+work	1	19	2	
+workout	1	26	1	
+would	2	16	1	20	1	
+y'all	1	17	1	
+yea	1	26	1	
+yea,	1	19	1	
+yeah	2	14	1	35	1	
+yellow	1	35	1	
+yesterday	1	21	1	
+yo	1	27	1	
+you	6	1	2	5	2	11	1	16	1	29	1	33	1	
+young	1	16	1	
+your	4	1	1	3	1	28	1	34	1	
+zero	1	3	1	

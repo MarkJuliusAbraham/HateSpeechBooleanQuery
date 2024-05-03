@@ -45,21 +45,20 @@ class IndexMachine:
             file.write('Writing to a file in Python.\n')
 
     def create_inverted_index(self):
-        # start reading
-        # do the logic for placing stuff in the inverted index
-        self._inverted_index.add_term("Mark", 1)
-        
-        self._inverted_index.add_term("Really", 1)
-        self._inverted_index.add_term("Likes", 1)
-        self._inverted_index.add_term("Clarisse", 1)
-        self._inverted_index.add_term("Mark", 24)
-        self._inverted_index.add_term("Mark", 22)
+        """Creates the Inverted Index determined and located by self._inverted_index_path.
+        """
 
+        with open(self._inverted_index_path, 'w') as file:
 
-        self._inverted_index.add_term("Cow", 99)
+            for entry in self._dataset:
+                # for each word in the entry or line of the tweet, split by the ' ':
+                for word in (entry[constants.TWEET].split(' ')):
 
+                    term = word.lower()
 
-
+                    self._inverted_index.add_term(term, entry[constants.DOCID])
+    
+        self.write_inverted_index_to_file(self._inverted_index, self._inverted_index_path)
 
 
     # def create_inverted_index(self):
@@ -102,10 +101,11 @@ class IndexMachine:
                 inverted_index (dictionary of the form {"string": "custom_queue object"})
                     see custom_queue.py in data_structures.
         """
+        # print(self._inverted_index)
 
         keys_sorted = []
 
-        for keys in inverted_index.keys():
+        for keys in inverted_index.get_keys():
             keys_sorted.append(keys)
 
         keys_sorted.sort()
@@ -115,13 +115,16 @@ class IndexMachine:
                 file.write(key)
                 file.write('\t')
 
-                
-                posting_size = inverted_index[key].size()
+                posting_size = inverted_index.get_postings(key).get_postings_size()
                 file.write(str(posting_size))
                 file.write('\t')
 
                 for count in range(posting_size):
-                    file.write(self._inverted_index[key].strdequeue())
+                    current_postings = inverted_index.get_postings(key)
+                    current_docID = current_postings.dequeue()
+                    file.write(str(current_docID))
+                    file.write('\t')
+                    file.write(str(current_postings.get_doc_freq(current_docID)))
                     file.write('\t')
                 file.write('\n')
 

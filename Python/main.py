@@ -8,7 +8,7 @@ def main():
     
     warning()
 
-    my_indexer = indt.IndexMachine(constants.PATH_TO_SMALL_JSON, constants.PATH_TO_INVERTED_INDEX)
+    my_indexer = indt.IndexMachine(constants.PATH_TO_LABELED_JSON, constants.PATH_TO_INVERTED_INDEX)
     my_indexer.create_inverted_index()
 
 def warning():
